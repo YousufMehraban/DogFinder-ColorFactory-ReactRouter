@@ -1,0 +1,13 @@
+a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+a.active{
+    background-color: rgb(229, 229, 55);
+    color: black;
+}
+
+
