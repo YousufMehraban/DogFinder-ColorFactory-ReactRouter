@@ -9,8 +9,8 @@ function ColorRoutes (){
     return(
             <Switch>
                 <Route exact path='/colors/new' > <ColorForm /> </Route>
-                <Route path='/colors/:name' > <Colors /> </Route>
-                <Route path='/colors' > <ColorLists /> </Route>
+                <Route exact path='/colors/:name' > <Colors /> </Route>
+                <Route exact path='/colors' > <ColorLists /> </Route>
                 <Route> <Redirect to='/colors' /> </Route>
             </Switch>
     )

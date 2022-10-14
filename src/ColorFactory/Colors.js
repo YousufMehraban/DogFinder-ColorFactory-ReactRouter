@@ -1,8 +1,10 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Redirect } from "react-router-dom";
+import { colors } from "./ColorList";
 
 const Colors = () =>{
     const {name} = useParams()
+    if (!colors.includes(name)) return <Redirect to='/colors' ></Redirect>
     window.document.body.style.backgroundColor = name
 
     return(
